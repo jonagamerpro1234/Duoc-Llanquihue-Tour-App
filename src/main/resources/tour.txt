@@ -1,0 +1,5 @@
+Volcan Osorno;Aventura;35000;8;20;Ascenso guiado
+Frutillar Colonial;Cultural;18000;4;15;Tour patrimonial
+Ruta Gastronomica;Gastronomico;22000;3;0;Comida tipica
+Saltos del Petrohue;Naturaleza;28000;6;12;Senderismo y vistas
+Tour Lago Llanquihue;Lacustre;25000;5;25;Recorrido lacustre

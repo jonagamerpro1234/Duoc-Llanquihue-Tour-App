@@ -8,12 +8,11 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-
         GestorDatos  gd = new GestorDatos();
 
         ArrayList<Tour> tours = gd.getTours();
 
-        System.out.println("-----[TOURS]-----");
+        System.out.println("-----[Todo Los TOURS]-----");
         for(Tour tour : tours){
             System.out.println(tour);
         }

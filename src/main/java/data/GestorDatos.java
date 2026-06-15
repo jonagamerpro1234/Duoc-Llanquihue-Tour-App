@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class GestorDatos {
 
-    private final String fileName = "tour.txt";
+    private final String fileName = "src/main/resources/tour.txt";
 
     /**
      * Verifica que el archivo exista y contenga datos.
@@ -129,7 +129,7 @@ public class GestorDatos {
                 int cupos = Integer.parseInt(datos[4]);
                 String descripcion = datos[5];
 
-                tours.add(new Tour(nombre,tipo,descripcion, precio,duracion,cupos));
+                tours.add(new Tour(nombre,descripcion,tipo,precio,duracion,cupos));
 
             } catch (NumberFormatException e) {
                 System.out.println("Error al convertir datos en la línea: " + linea);
