@@ -9,6 +9,9 @@ import java.util.List;
 /**
  *  Clase GestorDatos
  *  Permite gestionar los datos del archivo tours.txt
+ *
+ *  @author Michael Salgado
+ *  @since 1.0.0
  */
 public class GestorDatos {
 

@@ -1,5 +1,9 @@
 package model;
 
+/**
+ * @author Michael Salgado
+ * @since 1.0.0
+ */
 public class Tour {
 
     private String nombre;

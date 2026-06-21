@@ -5,6 +5,10 @@ import model.Tour;
 
 import java.util.ArrayList;
 
+/**
+ * @author Michael Salgado
+ * @since 1.0.0
+ */
 public class Main {
 
     public static void main(String[] args) {
