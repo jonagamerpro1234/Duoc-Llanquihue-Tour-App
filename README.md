@@ -114,13 +114,13 @@ Nombre;Tipo;Precio;DuracionHoras;CuposDisponibles;Descripcion
 
 ## ☕ Requisitos
 
-* Java JDK 25 o superior.
+* Java JDK 21 o superior.
 * IntelliJ IDEA Community Edition.
 
 ---
 
 ## 👨‍💻 Autor
 
-Michael Salgado
+Michael Salgado 
 
 Desarrollo Orientado a Objetos I - Duoc UC
