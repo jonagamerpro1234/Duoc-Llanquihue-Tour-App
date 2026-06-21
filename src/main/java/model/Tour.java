@@ -20,13 +20,14 @@ public class Tour {
     /**
      * Constructor de clase Tour
      */
-    public Tour(String nombreTour, String descripcion, String tipo, int precio, int duracionHora, int cuposDisponibles) {
+    public Tour(String nombreTour, String descripcion, String tipo, int precio, int duracionHora, int cuposDisponibles, Guia guia) {
         this.nombreTour = nombreTour;
         this.descripcion = descripcion;
         this.tipo = tipo;
         this.precio = precio;
         this.duracionHora = duracionHora;
         this.cuposDisponibles = cuposDisponibles;
+        this.guia = guia;
     }
 
     public String getNombreTour() {
@@ -75,6 +76,14 @@ public class Tour {
 
     public void setCuposDisponibles(int cuposDisponibles) {
         this.cuposDisponibles = cuposDisponibles;
+    }
+
+    public Guia getGuia() {
+        return guia;
+    }
+
+    public void setGuia(Guia guia) {
+        this.guia = guia;
     }
 
     @Override
