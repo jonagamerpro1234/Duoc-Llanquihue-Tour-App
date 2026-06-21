@@ -1,15 +1,39 @@
 package util;
 
+import org.jetbrains.annotations.NotNull;
+
+import java.io.File;
+
 /**
- * Clase de proporcionar herramientas para la gestion de archivo
+ * Clase que proporciona herramientas para la gestión de archivos.
+ *
  * @author Michael Salgado
  * @since 1.1.0
  */
 public class FileUtil {
 
-    public boolean verifyFile(){
-        return  true;
+    private FileUtil() {}
+
+    /**
+     * Verifica si un archivo existe.
+     *
+     * @param path ruta del archivo
+     * @return true si existe, false en caso contrario
+     */
+    public boolean fileExist(String path) {
+        return new File(path).exists();
     }
+
+    /**
+     * Verifica si un archivo está vacío.
+     *
+     * @param file archivo a verificar
+     * @return true si está vacío, false en caso contrario
+     */
+    public static boolean isEmpty(@NotNull File file) {
+        return file.length() == 0;
+    }
+
 
 
 
