@@ -6,18 +6,22 @@ package model;
  */
 public class Tour {
 
-    private String nombre;
+    //Atributos de clase Tour
+    private String nombreTour;
     private String descripcion;
     private String tipo;
     private int precio;
     private int duracionHora;
     private int cuposDisponibles;
 
+    //Atributos de otras clases
+    private Guia guia;
+
     /**
      * Constructor de clase Tour
      */
-    public Tour(String nombre, String descripcion, String tipo, int precio, int duracionHora, int cuposDisponibles) {
-        this.nombre = nombre;
+    public Tour(String nombreTour, String descripcion, String tipo, int precio, int duracionHora, int cuposDisponibles) {
+        this.nombreTour = nombreTour;
         this.descripcion = descripcion;
         this.tipo = tipo;
         this.precio = precio;
@@ -25,8 +29,8 @@ public class Tour {
         this.cuposDisponibles = cuposDisponibles;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreTour() {
+        return nombreTour;
     }
 
     public String getDescripcion() {
@@ -49,8 +53,8 @@ public class Tour {
         return cuposDisponibles;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreTour(String nombre) {
+        this.nombreTour = nombre;
     }
 
     public void setDescripcion(String descripcion) {
@@ -85,7 +89,7 @@ public class Tour {
             Cupos Disponibles: %d
             ------------------------------
             """.formatted(
-                nombre,
+                nombreTour,
                 tipo,
                 descripcion,
                 precio,
