@@ -1,6 +1,8 @@
 package model;
 
 /**
+ * Representa un proveedor asociado a la agencia Llanquihue Tour.
+ *
  * @author Michael Salgado
  * @since 1.1.0
  */
@@ -17,4 +19,23 @@ public class Proveedor extends Persona {
         return servicio;
     }
     public void setServicio(String servicio) {}
+
+    @Override
+    public String toString() {
+        return """
+                Proveedor[
+                    nombre=%s,
+                    apellido=%s,
+                    rut=%s,
+                    telefono=%s,
+                    servicio=%s
+                ]
+                """.formatted(
+                getNombre(),
+                getApellido(),
+                getRut(),
+                getTelefono(),
+                servicio
+        );
+    }
 }

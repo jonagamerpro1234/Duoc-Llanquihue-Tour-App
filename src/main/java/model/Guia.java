@@ -1,6 +1,8 @@
 package model;
 
 /**
+ * Representa al guía encargado de realizar un tour turístico.
+ *
  * @author Michael Salgado
  * @since 1.1.0
  */
@@ -16,5 +18,25 @@ public class Guia extends Persona {
     }
 
     public void setEspecialidad(String especialidad) {}
+
+    @Override
+    public String toString() {
+        return """
+                Guia[
+                    nombre=%s,
+                    apellido=%s,
+                    rut=%s,
+                    telefono=%s,
+                    correo=%s,
+                    especialidad=%s
+                ]
+                """.formatted(
+                getNombre(),
+                getApellido(),
+                getRut(),
+                getTelefono(),
+                getCorreo(),
+                especialidad
+        );
 
 }
