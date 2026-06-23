@@ -18,7 +18,15 @@ public class Tour {
     private Guia guia;
 
     /**
-     * Constructor de clase Tour
+     * Constructor de la clase Tour.
+     *
+     * @param nombre nombre del tour
+     * @param descripcion descripción del tour
+     * @param tipo tipo de tour
+     * @param precio precio del tour
+     * @param duracionHora duración en horas
+     * @param cuposDisponibles cantidad de cupos disponibles
+     * @param guia guía responsable del tour
      */
     public Tour(String nombre, String descripcion, String tipo, int precio, int duracionHora, int cuposDisponibles, Guia guia) {
         this.nombre = nombre;
@@ -96,6 +104,7 @@ public class Tour {
             Precio: $%d
             Duración: %d horas
             Cupos Disponibles: %d
+            Guía Responsable: %s %s
             ------------------------------
             """.formatted(
                 nombre,
@@ -103,7 +112,9 @@ public class Tour {
                 descripcion,
                 precio,
                 duracionHora,
-                cuposDisponibles
+                cuposDisponibles,
+                guia.getNombre(),
+                guia.getApellido()
         );
     }
 }

@@ -10,9 +10,10 @@ import java.io.File;
  * @author Michael Salgado
  * @since 1.1.0
  */
-public class FileUtil {
+public final class FileUtil {
 
-    private FileUtil() {}
+    private FileUtil() {
+    }
 
     /**
      * Verifica si un archivo existe.
@@ -20,7 +21,7 @@ public class FileUtil {
      * @param path ruta del archivo
      * @return true si existe, false en caso contrario
      */
-    public boolean fileExist(String path) {
+    public static boolean fileExist(String path) {
         return new File(path).exists();
     }
 
@@ -33,8 +34,4 @@ public class FileUtil {
     public static boolean isEmpty(@NotNull File file) {
         return file.length() == 0;
     }
-
-
-
-
 }

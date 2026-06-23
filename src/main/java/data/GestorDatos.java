@@ -1,6 +1,7 @@
 package data;
 
 import model.Tour;
+import model.Guia;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ import java.util.List;
  */
 public class GestorDatos {
 
-    private final String fileName = "src/main/resources/tours.txt";
+    private static final String fileName = "src/main/resources/tours.txt";
 
     /**
      * Verifica que el archivo exista y contenga datos.

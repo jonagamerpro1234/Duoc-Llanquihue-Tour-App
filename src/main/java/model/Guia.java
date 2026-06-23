@@ -10,8 +10,14 @@ public class Guia extends Persona {
 
     private String especialidad;
 
-    public Guia(String nombre, String apellido, String rut, String telefono) {
+    public Guia(String nombre,
+                String apellido,
+                String rut,
+                String telefono,
+                String especialidad) {
+
         super(nombre, apellido, rut, telefono);
+        this.especialidad = especialidad;
     }
 
     public String getEspecialidad() {
@@ -19,6 +25,7 @@ public class Guia extends Persona {
     }
 
     public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
     }
 
     @Override

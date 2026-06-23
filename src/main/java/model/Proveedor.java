@@ -18,7 +18,10 @@ public class Proveedor extends Persona {
     public String getServicio() {
         return servicio;
     }
-    public void setServicio(String servicio) {}
+
+    public void setServicio(String servicio) {
+        this.servicio = servicio;
+    }
 
     @Override
     public String toString() {
