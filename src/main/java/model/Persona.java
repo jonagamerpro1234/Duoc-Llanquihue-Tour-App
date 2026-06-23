@@ -1,6 +1,8 @@
 package model;
 
 /**
+ * Representa una persona asociada a la agencia Llanquihue Tour.
+ *
  * @author Michael Salgado
  * @since 1.1.0
  */
@@ -55,6 +57,6 @@ public class Persona {
 
     @Override
     public String toString() {
-        return nombre + apellido;
+        return nombre + " " +  apellido;
     }
 }

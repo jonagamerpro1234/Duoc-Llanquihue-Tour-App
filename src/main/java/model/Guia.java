@@ -31,15 +31,14 @@ public class Guia extends Persona {
     @Override
     public String toString() {
         return """
-                Guia[
-                    nombre=%s,
-                    apellido=%s,
-                    rut=%s,
-                    telefono=%s,
-                    correo=%s,
-                    especialidad=%s
-                ]
-                """.formatted(
+            ------------------------------
+            Guía: %s %s
+            RUT: %s
+            Teléfono: %s
+            Correo: %s
+            Especialidad: %s
+            ------------------------------
+            """.formatted(
                 getNombre(),
                 getApellido(),
                 getRut(),
@@ -47,6 +46,5 @@ public class Guia extends Persona {
                 getCorreo(),
                 especialidad
         );
-
     }
 }

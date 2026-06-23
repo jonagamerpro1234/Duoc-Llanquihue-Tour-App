@@ -1,6 +1,8 @@
 package model;
 
 /**
+ * Representa un tour turístico ofrecido por la agencia.
+ *
  * @author Michael Salgado
  * @since 1.0.0
  */

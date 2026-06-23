@@ -26,14 +26,13 @@ public class Proveedor extends Persona {
     @Override
     public String toString() {
         return """
-                Proveedor[
-                    nombre=%s,
-                    apellido=%s,
-                    rut=%s,
-                    telefono=%s,
-                    servicio=%s
-                ]
-                """.formatted(
+            ------------------------------
+            Proveedor: %s %s
+            RUT: %s
+            Teléfono: %s
+            Servicio: %s
+            ------------------------------
+            """.formatted(
                 getNombre(),
                 getApellido(),
                 getRut(),

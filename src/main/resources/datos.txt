@@ -1,0 +1,4 @@
+GUIA;Pedro;Soto;12345678-9;987654321;Montañismo
+GUIA;Juan;Perez;11222333-4;998877665;Turismo Cultural
+PROVEEDOR;Carlos;Rojas;99888777-6;955443322;Transporte
+PROVEEDOR;Ana;Muñoz;88777666-5;944332211;Alojamiento
